@@ -67,7 +67,7 @@
 
 @layer demo.scroll-driven-animation {
   :root {
-    overflow-x: auto;
+    overflow-x: hidden;
     overscroll-behavior: contain;
     scroll-snap-type: x mandatory;
     

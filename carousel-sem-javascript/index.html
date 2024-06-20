@@ -5,27 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carousel usando somente CSS5 e HTML</title>
     <!--CSS-->
-    <link rel="stylesheet" href="assets/css/theme.css" >
+    <link rel="stylesheet" href="assets/css/theme.css" />
   </head>
   <body>
-    <div class="pagination">
-      <a href="#section-1">Inline page 1</a>
-      <a href="#section-2">Inline page 2</a>
-      <a href="#section-3">Inline page 3</a>
-      <a href="#section-4">Inline page 4</a>
-      <a href="#section-5">Inline page 5</a>
-      <a href="#section-6">Inline page 6</a>
-      <a href="#section-7">Inline page 7</a>
-    </div>
+    <nav aria-label="Pagination" class="pagination">
+      <a href="#section-1" aria-controls="section-1">Inline page 1</a>
+      <a href="#section-2" aria-controls="section-2">Inline page 2</a>
+      <a href="#section-3" aria-controls="section-3">Inline page 3</a>
+      <a href="#section-4" aria-controls="section-4">Inline page 4</a>
+      <a href="#section-5" aria-controls="section-5">Inline page 5</a>
+      <a href="#section-6" aria-controls="section-6">Inline page 6</a>
+      <a href="#section-7" aria-controls="section-7">Inline page 7</a>
+    </nav>
 
     <div class="controls">
-      <button class="previous" onclick="window.scrollBy(-100, 0)">
-        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <button
+        class="previous"
+        aria-label="Previous section"
+        onclick="window.scrollBy(-100, 0)"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
           <path d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
       </button>
-      <button class="next" onclick="window.scrollBy(100, 0)">
-        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <button
+        class="next"
+        aria-label="Next section"
+        onclick="window.scrollBy(100, 0)"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
           <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
         </svg>
       </button>
